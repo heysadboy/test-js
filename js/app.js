@@ -30,7 +30,7 @@ function setTableData(data) {
 
 
 
-        name.textContent = `${user.name.last} ${user.name.first}`;
+        name.textContent = `${user.name.title} ${user.name.last} ${user.name.first}`;
         name.className = "text-truncate";
         name.style = "max-width: 200px;";
 

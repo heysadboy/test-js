@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <title>Javascript Coding Test</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body onload="addTableData()">
+  <div class="container">
+    <h2>Shippio FrontEnd JavaScript exam</h2>
+    <form role="form">
+      <div class="form-group">
+        <button id="start" type="button" class="btn btn-secondary" onclick="startRandom()">start random</button>
+        <button id="stop" type="button" class="btn btn-secondary" onclick="stopRandom()">stop random</button>
+        <button id="sort" type="button" class="btn btn-secondary" onclick="sortData()">sort</button>
+      </div>
+    </form>
+
+    <div class="contents">
+      <div class="table-responsive">
+        <table id="table" class="table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Picture</th>
+              <th scope="col">Balance</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="json/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
